@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>たなか - Portfolio</title>
-  <meta name="description" content="たなかのポートフォリオサイト。ゲーム開発、アプリ開発、Web制作の活動をまとめています。">
-  <meta property="og:title" content="たなか - Portfolio">
+  <title>StudioY - Portfolio</title>
+  <meta name="description" content="StudioYのポートフォリオサイト。ゲーム開発、アプリ開発、Web制作の活動をまとめています。">
+  <meta property="og:title" content="StudioY - Portfolio">
   <meta property="og:description" content="ゲーム開発、アプリ開発、Web制作の活動をまとめたポートフォリオサイトです。">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
@@ -399,7 +399,8 @@
 
     .works__grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: minmax(0, 380px);
+      justify-content: center;
       gap: 18px;
     }
 
@@ -547,7 +548,8 @@
 
     .links__grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: minmax(0, 240px);
+      justify-content: center;
       gap: 14px;
     }
 
@@ -745,14 +747,13 @@
 </head>
 <body data-lang="ja">
   <nav class="nav" aria-label="Primary navigation">
-    <a href="#hero" class="nav__logo" aria-label="たなか Portfolio">
-      <span class="nav__logo-mark">T</span>
-      <span>tanaka.dev</span>
+    <a href="#hero" class="nav__logo" aria-label="StudioY Portfolio">
+      <span class="nav__logo-mark">Y</span>
+      <span>StudioY</span>
     </a>
     <div class="nav__links">
       <a class="nav__link" href="#about">About</a>
       <a class="nav__link" href="#works">Works</a>
-      <a class="nav__link" href="#story">Story</a>
       <a class="nav__link" href="#links">Links</a>
       <button class="nav__lang" type="button" id="langToggle" aria-label="Switch language">EN</button>
     </div>
@@ -767,7 +768,7 @@
             <span class="ja">個人開発ポートフォリオ</span>
             <span class="en">Independent developer portfolio</span>
           </p>
-          <h1 class="hero__title">tanaka<span>works</span></h1>
+          <h1 class="hero__title">StudioY<span>works</span></h1>
           <p class="hero__subtitle">
             <span class="ja">ゲーム、アプリ、Webの小さなアイデアを、使えるかたちまで作っています。</span>
             <span class="en">I turn small ideas for games, apps, and the web into playful, usable products.</span>
@@ -777,9 +778,9 @@
               <span class="ja">制作物を見る</span>
               <span class="en">View Works</span>
             </a>
-            <a class="button button--ghost" href="#links">
-              <span class="ja">連絡先へ</span>
-              <span class="en">Contact</span>
+            <a class="button button--ghost" href="https://x.com/ryoen64" target="_blank" rel="noopener">
+              <span class="ja">Xを見る</span>
+              <span class="en">View X</span>
             </a>
           </div>
         </div>
@@ -853,37 +854,6 @@
       <div class="section__inner">
         <h2 class="section__heading">Works</h2>
         <div class="works__grid">
-          <article class="work-card" style="--tone: #e6f8fc;">
-            <div class="work-card__visual" aria-hidden="true">
-              <svg viewBox="0 0 160 160">
-                <rect width="94" height="126" x="33" y="17" fill="#22323f" rx="18"/>
-                <rect width="74" height="94" x="43" y="31" fill="#e8fbff" rx="10"/>
-                <circle cx="80" cy="134" r="5" fill="#fff"/>
-                <path fill="#55c7df" d="M57 66h46v12H57zM57 88h31v12H57z"/>
-              </svg>
-            </div>
-            <div class="work-card__body">
-              <div class="work-card__meta">
-                <span class="pill">App</span>
-                <span class="pill">Prototype</span>
-              </div>
-              <h3 class="work-card__title">
-                <span class="ja">習慣メモアプリ</span>
-                <span class="en">Habit Memo App</span>
-              </h3>
-              <p class="work-card__desc">
-                <span class="ja">日々の小さな記録を続けやすくする、軽量なメモアプリの制作枠です。</span>
-                <span class="en">A lightweight app concept for keeping small daily records easy to continue.</span>
-              </p>
-              <div class="work-card__links">
-                <span class="mini-link mini-link--disabled">
-                  <span class="ja">準備中</span>
-                  <span class="en">Soon</span>
-                </span>
-              </div>
-            </div>
-          </article>
-
           <article class="work-card" style="--tone: #fff2cf;">
             <div class="work-card__visual" aria-hidden="true">
               <svg viewBox="0 0 160 160">
@@ -914,84 +884,6 @@
               </div>
             </div>
           </article>
-
-          <article class="work-card" style="--tone: #ecf8ef;">
-            <div class="work-card__visual" aria-hidden="true">
-              <svg viewBox="0 0 160 160">
-                <rect width="114" height="82" x="23" y="36" fill="#22323f" rx="12"/>
-                <rect width="94" height="58" x="33" y="48" fill="#fff" rx="6"/>
-                <path fill="#55c7df" d="M45 62h70v10H45z"/>
-                <path fill="#84dcb1" d="M45 82h28v12H45z"/>
-                <path fill="#ffd769" d="M83 82h31v12H83z"/>
-                <path fill="#22323f" d="M70 118h20l8 18H62l8-18Z"/>
-              </svg>
-            </div>
-            <div class="work-card__body">
-              <div class="work-card__meta">
-                <span class="pill">Web</span>
-                <span class="pill">Portfolio</span>
-              </div>
-              <h3 class="work-card__title">
-                <span class="ja">Webサイト制作</span>
-                <span class="en">Website Project</span>
-              </h3>
-              <p class="work-card__desc">
-                <span class="ja">活動内容や制作物を見やすくまとめる、静的Webサイトの制作枠です。</span>
-                <span class="en">A static website project for organizing work, links, and development notes.</span>
-              </p>
-              <div class="work-card__links">
-                <a class="mini-link" href="https://studio-y-64.github.io/sy64/" target="_blank" rel="noopener" aria-label="Live site link">Live</a>
-                <a class="mini-link mini-link--soft" href="https://github.com/studio-y-64/sy64" target="_blank" rel="noopener" aria-label="GitHub link">GitHub</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="story" class="section">
-      <div class="section__inner">
-        <h2 class="section__heading">Story</h2>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__year">01</div>
-            <div>
-              <h3 class="timeline__title">
-                <span class="ja">アイデアを小さく試す</span>
-                <span class="en">Test ideas quickly</span>
-              </h3>
-              <p class="timeline__text">
-                <span class="ja">まずは最小の形で作り、動かしながら必要な機能を見極めます。</span>
-                <span class="en">Build the smallest useful version first, then learn from using it.</span>
-              </p>
-            </div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__year">02</div>
-            <div>
-              <h3 class="timeline__title">
-                <span class="ja">触り心地を整える</span>
-                <span class="en">Refine the feel</span>
-              </h3>
-              <p class="timeline__text">
-                <span class="ja">画面の読みやすさ、操作の迷いにくさ、楽しい反応を丁寧に調整します。</span>
-                <span class="en">Tune readability, interaction flow, and small moments of delight.</span>
-              </p>
-            </div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__year">03</div>
-            <div>
-              <h3 class="timeline__title">
-                <span class="ja">公開して育てる</span>
-                <span class="en">Release and improve</span>
-              </h3>
-              <p class="timeline__text">
-                <span class="ja">GitHub Pagesなどで公開し、実際に見てもらえる状態まで進めます。</span>
-                <span class="en">Publish the work and keep improving it from real feedback.</span>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1000,25 +892,10 @@
       <div class="section__inner">
         <h2 class="section__heading">Links</h2>
         <div class="links__grid">
-          <a class="link-card" href="https://github.com/studio-y-64" target="_blank" rel="noopener" aria-label="GitHub">
-            <span class="link-card__icon">GH</span>
-            <span class="link-card__label">GitHub</span>
+          <a class="link-card" href="https://x.com/ryoen64" target="_blank" rel="noopener" aria-label="X">
+            <span class="link-card__icon">X</span>
+            <span class="link-card__label">@ryoen64</span>
           </a>
-          <a class="link-card" href="https://github.com/studio-y-64/sy64" target="_blank" rel="noopener" aria-label="Repository">
-            <span class="link-card__icon">RE</span>
-            <span class="link-card__label">Repository</span>
-          </a>
-          <a class="link-card" href="https://studio-y-64.github.io/sy64/" target="_blank" rel="noopener" aria-label="Published site">
-            <span class="link-card__icon">HP</span>
-            <span class="link-card__label">Homepage</span>
-          </a>
-          <span class="link-card link-card--disabled" aria-label="Contact coming soon">
-            <span class="link-card__icon">@</span>
-            <span class="link-card__label">
-              <span class="ja">連絡先準備中</span>
-              <span class="en">Contact Soon</span>
-            </span>
-          </span>
         </div>
       </div>
     </section>
@@ -1026,10 +903,10 @@
 
   <footer class="footer">
     <p class="footer__logo">
-      <span class="nav__logo-mark">T</span>
-      <span>tanaka.dev</span>
+      <span class="nav__logo-mark">Y</span>
+      <span>StudioY</span>
     </p>
-    <p>&copy; 2026 tanaka</p>
+    <p>&copy; 2026 StudioY</p>
   </footer>
 
   <script>
