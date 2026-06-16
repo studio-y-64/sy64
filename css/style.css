@@ -549,14 +549,17 @@ svg {
 }
 
 .links__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 240px);
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 14px;
 }
 
 .link-card {
   display: grid;
+  flex: 1 1 0;
+  max-width: 240px;
+  min-width: 0;
   min-height: 124px;
   place-items: center;
   padding: 18px;
@@ -595,10 +598,22 @@ svg {
   font-weight: 700;
 }
 
+.link-card__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .link-card__label {
   margin-top: 10px;
   color: var(--muted);
   font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .footer {
@@ -1133,7 +1148,6 @@ svg {
     font-size: 0.92rem;
   }
   .works__grid,
-  .links__grid,
   .timeline__item {
     grid-template-columns: 1fr;
   }
