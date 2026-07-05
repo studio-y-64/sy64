@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Zen+Maru+Gothic:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="timer-page timer-page--assets" data-promo-lang="ja">
+<body class="timer-page timer-page--assets" data-lang="ja">
   <nav class="nav timer-nav" aria-label="Primary navigation">
     <a href="../index.html" class="nav__logo" aria-label="StudioY Portfolio">
       <span class="nav__logo-mark">Y</span>
@@ -28,8 +28,11 @@
       <a class="nav__link" href="#screens">Screens</a>
       <a class="nav__link" href="#premium">Premium</a>
       <a class="nav__link" href="privacy/">Privacy</a>
-      <button class="nav__lang timer-nav__lang" type="button" id="timerLangToggle" aria-label="Switch promo images to English">EN</button>
-      <a class="nav__lang timer-nav__cta" href="#features">機能を見る</a>
+      <button class="nav__lang timer-nav__lang" type="button" id="timerLangToggle" aria-label="Switch to English">EN</button>
+      <a class="nav__lang timer-nav__cta" href="#features">
+        <span class="ja">機能を見る</span>
+        <span class="en">View Features</span>
+      </a>
     </div>
   </nav>
 
@@ -37,55 +40,82 @@
     <section class="timer-asset-hero">
       <div class="timer-asset-hero__copy">
         <img class="timer-asset-hero__icon" src="assets/app_icon.png" alt="">
-        <h1>工程タイマー</h1>
-        <p class="timer-asset-hero__statement">複数工程を、<br>ひと目で管理。</p>
-        <p class="timer-asset-hero__lead">工程ごとに色をつけて、今やることも次にやることもすぐ確認。料理、トレーニング、仕込み、清掃、検品など、くり返す作業をテンポよく進められます。</p>
+        <h1>
+          <span class="ja">工程タイマー</span>
+          <span class="en">Work Timer</span>
+        </h1>
+        <p class="timer-asset-hero__statement">
+          <span class="ja">複数工程を、<br>ひと目で管理。</span>
+          <span class="en">Manage every step<br>at a glance.</span>
+        </p>
+        <p class="timer-asset-hero__lead">
+          <span class="ja">工程ごとに色をつけて、今やることも次にやることもすぐ確認。料理、トレーニング、仕込み、清掃、検品など、くり返す作業をテンポよく進められます。</span>
+          <span class="en">Color-code each step so you can see what is running now and what comes next. It keeps repeated work moving smoothly, from cooking and training to prep, cleaning, and inspection.</span>
+        </p>
         <div class="timer-asset-hero__actions">
-          <a class="button button--primary" href="#features">機能を見る</a>
-          <a class="button button--ghost" href="#screens">画面を見る</a>
+          <a class="button button--primary" href="#features">
+            <span class="ja">機能を見る</span>
+            <span class="en">View Features</span>
+          </a>
+          <a class="button button--ghost" href="#screens">
+            <span class="ja">画面を見る</span>
+            <span class="en">View Screens</span>
+          </a>
         </div>
-        <ul class="timer-proof-list" aria-label="工程タイマーの特徴">
-          <li>工程別カラー</li>
-          <li>音声操作</li>
-          <li>マルチタイマー</li>
-          <li>作業ログ</li>
-          <li>CSV出力</li>
+        <ul class="timer-proof-list" aria-label="工程タイマーの特徴" data-ja-label="工程タイマーの特徴" data-en-label="Work Timer features">
+          <li><span class="ja">工程別カラー</span><span class="en">Step colors</span></li>
+          <li><span class="ja">音声操作</span><span class="en">Voice control</span></li>
+          <li><span class="ja">マルチタイマー</span><span class="en">Multi timer</span></li>
+          <li><span class="ja">作業ログ</span><span class="en">Work log</span></li>
+          <li><span class="ja">CSV出力</span><span class="en">CSV export</span></li>
         </ul>
       </div>
 
       <figure class="timer-promo-card timer-promo-card--hero">
-        <img src="assets/main.png" data-ja-src="assets/main.png" data-en-src="assets/main_en.png" alt="複数工程をひと目で管理できる工程タイマーの画面">
+        <img src="assets/main.png" data-ja-src="assets/main.png" data-en-src="assets/main_en.png" data-ja-alt="複数工程をひと目で管理できる工程タイマーの画面" data-en-alt="Work Timer screen for managing multiple steps at a glance" alt="複数工程をひと目で管理できる工程タイマーの画面">
       </figure>
     </section>
 
     <section id="features" class="timer-feature-story timer-feature-story--single">
       <div class="timer-story-copy">
         <span class="timer-story-number">01</span>
-        <h2>工程別に色を設定。今の工程がすぐわかる。</h2>
-        <p>工程ごとに色とアイコンを分けられるので、作業中でも現在位置が一目でわかります。手が離せない場面では音声操作も活用できます。</p>
+        <h2>
+          <span class="ja">工程別に色を設定。今の工程がすぐわかる。</span>
+          <span class="en">Set colors by step and see the current task instantly.</span>
+        </h2>
+        <p>
+          <span class="ja">工程ごとに色とアイコンを分けられるので、作業中でも現在位置が一目でわかります。手が離せない場面では音声操作も活用できます。</span>
+          <span class="en">Each step can have its own color and icon, making the current position easy to spot while you work. Voice control helps when your hands are busy.</span>
+        </p>
         <ul class="timer-story-points">
-          <li>現在工程を大きなタイマーで表示</li>
-          <li>次の工程まで同じ画面で確認</li>
-          <li>終了音、バイブレーションにも対応</li>
+          <li><span class="ja">現在工程を大きなタイマーで表示</span><span class="en">Show the active step with a large timer</span></li>
+          <li><span class="ja">次の工程まで同じ画面で確認</span><span class="en">Check the next step on the same screen</span></li>
+          <li><span class="ja">終了音、バイブレーションにも対応</span><span class="en">Use alerts and vibration when a step ends</span></li>
         </ul>
       </div>
       <figure class="timer-promo-card">
-        <img src="assets/single_timer.png" data-ja-src="assets/single_timer.png" data-en-src="assets/single_timer_en.jpeg" alt="工程別カラーで現在工程を表示するシングルタイマー画面" loading="lazy">
+        <img src="assets/single_timer.png" data-ja-src="assets/single_timer.png" data-en-src="assets/single_timer_en.jpeg" data-ja-alt="工程別カラーで現在工程を表示するシングルタイマー画面" data-en-alt="Single timer screen showing the current step with step colors" alt="工程別カラーで現在工程を表示するシングルタイマー画面" loading="lazy">
       </figure>
     </section>
 
     <section id="multi" class="timer-feature-story timer-feature-story--multi">
       <figure class="timer-promo-card">
-        <img src="assets/multi_timer.png" data-ja-src="assets/multi_timer.png" data-en-src="assets/multi_timer_en.png" alt="複数のタイマーを同時に管理するマルチタイマー画面" loading="lazy">
+        <img src="assets/multi_timer.png" data-ja-src="assets/multi_timer.png" data-en-src="assets/multi_timer_en.png" data-ja-alt="複数のタイマーを同時に管理するマルチタイマー画面" data-en-alt="Multi-timer screen for managing several timers at the same time" alt="複数のタイマーを同時に管理するマルチタイマー画面" loading="lazy">
       </figure>
       <div class="timer-story-copy">
         <span class="timer-story-number">02</span>
-        <h2>同じ作業を、個別に工程管理。</h2>
-        <p>複数の対象を少しずつずらして進める作業も、1画面で見やすく管理できます。各セッションの進行状況を並べて確認できます。</p>
+        <h2>
+          <span class="ja">同じ作業を、個別に工程管理。</span>
+          <span class="en">Run the same workflow across separate sessions.</span>
+        </h2>
+        <p>
+          <span class="ja">複数の対象を少しずつずらして進める作業も、1画面で見やすく管理できます。各セッションの進行状況を並べて確認できます。</span>
+          <span class="en">When several items move through the same steps at different times, the multi-timer view keeps every session visible on one screen.</span>
+        </p>
         <ul class="timer-story-points">
-          <li>複数タイマーを同時に実行</li>
-          <li>セッションごとに状態を固定表示</li>
-          <li>作業中の停止や一時停止も個別操作</li>
+          <li><span class="ja">複数タイマーを同時に実行</span><span class="en">Run multiple timers at once</span></li>
+          <li><span class="ja">セッションごとに状態を固定表示</span><span class="en">Keep each session status visible</span></li>
+          <li><span class="ja">作業中の停止や一時停止も個別操作</span><span class="en">Pause or stop each session independently</span></li>
         </ul>
       </div>
     </section>
@@ -93,70 +123,97 @@
     <section id="log" class="timer-feature-story timer-feature-story--log">
       <div class="timer-story-copy">
         <span class="timer-story-number">03</span>
-        <h2>作業ログを記録し、グラフで見える化。</h2>
-        <p>実行回数や合計時間を確認して、日々の作業を振り返れます。PremiumではCSV出力も使えるので、共有や記録にもつなげやすくなります。</p>
+        <h2>
+          <span class="ja">作業ログを記録し、グラフで見える化。</span>
+          <span class="en">Record work logs and review them in charts.</span>
+        </h2>
+        <p>
+          <span class="ja">実行回数や合計時間を確認して、日々の作業を振り返れます。PremiumではCSV出力も使えるので、共有や記録にもつなげやすくなります。</span>
+          <span class="en">Track run counts and total time to review your daily work. Premium also supports CSV export for sharing and external records.</span>
+        </p>
         <ul class="timer-story-points">
-          <li>日、週、月、すべてで集計</li>
-          <li>作業ごとの実行回数をグラフ表示</li>
-          <li>CSV出力で外部管理にも対応</li>
+          <li><span class="ja">日、週、月、すべてで集計</span><span class="en">View totals by day, week, month, or all time</span></li>
+          <li><span class="ja">作業ごとの実行回数をグラフ表示</span><span class="en">See run counts by workflow in charts</span></li>
+          <li><span class="ja">CSV出力で外部管理にも対応</span><span class="en">Export CSV files for external tracking</span></li>
         </ul>
       </div>
       <figure class="timer-promo-card">
-        <img src="assets/log.png" data-ja-src="assets/log.png" data-en-src="assets/log_en.png" alt="作業ログをグラフで確認できる画面" loading="lazy">
+        <img src="assets/log.png" data-ja-src="assets/log.png" data-en-src="assets/log_en.png" data-ja-alt="作業ログをグラフで確認できる画面" data-en-alt="Work log screen with chart summaries" alt="作業ログをグラフで確認できる画面" loading="lazy">
       </figure>
     </section>
 
     <section id="screens" class="timer-screen-section">
       <div class="timer-section-head">
-        <h2>実際の画面で、作業の流れを確認。</h2>
-        <p>保存した工程セット、シングル実行、マルチタイマー、設定画面まで、作業中に迷わない見た目に整えています。</p>
+        <h2>
+          <span class="ja">実際の画面で、作業の流れを確認。</span>
+          <span class="en">Check the workflow through real app screens.</span>
+        </h2>
+        <p>
+          <span class="ja">保存した工程セット、シングル実行、マルチタイマー、設定画面まで、作業中に迷わない見た目に整えています。</span>
+          <span class="en">Saved timer sets, single runs, multi-timers, and settings are designed to stay clear while you are working.</span>
+        </p>
       </div>
-      <div class="timer-screen-rail" aria-label="工程タイマーのスクリーンショット">
+      <div class="timer-screen-rail" aria-label="工程タイマーのスクリーンショット" data-ja-label="工程タイマーのスクリーンショット" data-en-label="Work Timer screenshots">
         <figure>
-          <img src="assets/screenshot/timer_list.png" alt="タイマー一覧画面" loading="lazy">
-          <figcaption>タイマー一覧</figcaption>
+          <img src="assets/screenshot/timer_list.png" data-ja-alt="タイマー一覧画面" data-en-alt="Timer list screen" alt="タイマー一覧画面" loading="lazy">
+          <figcaption><span class="ja">タイマー一覧</span><span class="en">Timer list</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/screenshot/timer_running1.png" alt="シングルタイマー実行画面" loading="lazy">
-          <figcaption>シングル実行</figcaption>
+          <img src="assets/screenshot/timer_running1.png" data-ja-alt="シングルタイマー実行画面" data-en-alt="Single timer running screen" alt="シングルタイマー実行画面" loading="lazy">
+          <figcaption><span class="ja">シングル実行</span><span class="en">Single run</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/screenshot/multi_timer_running.png" alt="マルチタイマー実行画面" loading="lazy">
-          <figcaption>マルチ実行</figcaption>
+          <img src="assets/screenshot/multi_timer_running.png" data-ja-alt="マルチタイマー実行画面" data-en-alt="Multi-timer running screen" alt="マルチタイマー実行画面" loading="lazy">
+          <figcaption><span class="ja">マルチ実行</span><span class="en">Multi run</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/screenshot/setting1.png" alt="設定画面" loading="lazy">
-          <figcaption>設定</figcaption>
+          <img src="assets/screenshot/setting1.png" data-ja-alt="設定画面" data-en-alt="Settings screen" alt="設定画面" loading="lazy">
+          <figcaption><span class="ja">設定</span><span class="en">Settings</span></figcaption>
         </figure>
       </div>
     </section>
 
     <section id="premium" class="timer-premium-v2">
       <div>
-        <h2>Premiumで、作業の記録と管理をもっと便利に。</h2>
-        <p>保存数、マルチタイマー、CSV出力、広告非表示を解放。作業の邪魔をしない導線で、必要なときだけアップグレードできます。</p>
+        <h2>
+          <span class="ja">Premiumで、作業の記録と管理をもっと便利に。</span>
+          <span class="en">Premium makes work tracking and management easier.</span>
+        </h2>
+        <p>
+          <span class="ja">保存数、マルチタイマー、CSV出力、広告非表示を解放。作業の邪魔をしない導線で、必要なときだけアップグレードできます。</span>
+          <span class="en">Unlock unlimited saved timers, multi-timer limits, CSV export, and ad removal. Upgrade only when you need it, without interrupting your work.</span>
+        </p>
       </div>
       <div class="timer-premium-grid">
-        <span>タイマー保存数の上限解除</span>
-        <span>マルチタイマー制限の解除</span>
-        <span>作業ログのCSV出力</span>
-        <span>広告非表示</span>
+        <span><span class="ja">タイマー保存数の上限解除</span><span class="en">Unlimited saved timers</span></span>
+        <span><span class="ja">マルチタイマー制限の解除</span><span class="en">Unlocked multi-timer use</span></span>
+        <span><span class="ja">作業ログのCSV出力</span><span class="en">CSV export for work logs</span></span>
+        <span><span class="ja">広告非表示</span><span class="en">Ad removal</span></span>
       </div>
     </section>
 
     <section class="timer-cta-v2">
       <div>
-        <h2>くり返す作業を、もっとスムーズに。</h2>
-        <p>工程タイマーで、今日の作業を止めずに進める。</p>
+        <h2>
+          <span class="ja">くり返す作業を、もっとスムーズに。</span>
+          <span class="en">Make repeated work smoother.</span>
+        </h2>
+        <p>
+          <span class="ja">工程タイマーで、今日の作業を止めずに進める。</span>
+          <span class="en">Keep today's work moving with Work Timer.</span>
+        </p>
       </div>
-      <a class="button button--primary" href="#features">機能を見る</a>
+      <a class="button button--primary" href="#features">
+        <span class="ja">機能を見る</span>
+        <span class="en">View Features</span>
+      </a>
     </section>
   </main>
 
   <footer class="footer timer-footer">
     <nav class="timer-footer-links" aria-label="Legal links">
-      <a href="privacy/">プライバシーポリシー</a>
-      <a href="terms/">利用規約</a>
+      <a href="privacy/"><span class="ja">プライバシーポリシー</span><span class="en">Privacy Policy</span></a>
+      <a href="terms/"><span class="ja">利用規約</span><span class="en">Terms</span></a>
     </nav>
     <p class="footer__logo">
       <span class="nav__logo-mark">Y</span>
@@ -166,22 +223,59 @@
   </footer>
 
   <script>
+    const timerLangKey = "workTimerLang";
     const timerBody = document.body;
     const timerToggle = document.getElementById("timerLangToggle");
     const timerPromoImages = document.querySelectorAll("[data-ja-src][data-en-src]");
+    const timerLocalizedImages = document.querySelectorAll("[data-ja-alt][data-en-alt]");
+    const timerLocalizedLabels = document.querySelectorAll("[data-ja-label][data-en-label]");
 
-    timerToggle.addEventListener("click", () => {
-      const nextLang = timerBody.dataset.promoLang === "ja" ? "en" : "ja";
-      timerBody.dataset.promoLang = nextLang;
+    const getSavedTimerLang = () => {
+      try {
+        return localStorage.getItem(timerLangKey);
+      } catch {
+        return null;
+      }
+    };
+
+    const setSavedTimerLang = (lang) => {
+      try {
+        localStorage.setItem(timerLangKey, lang);
+      } catch {
+      }
+    };
+
+    const applyTimerLang = (nextLang) => {
+      timerBody.dataset.lang = nextLang;
+      document.documentElement.lang = nextLang;
       timerToggle.textContent = nextLang === "ja" ? "EN" : "JA";
       timerToggle.setAttribute(
         "aria-label",
-        nextLang === "ja" ? "Switch promo images to English" : "プロモ画像を日本語に切り替え"
+        nextLang === "ja" ? "Switch to English" : "日本語に切り替え"
       );
 
       timerPromoImages.forEach((image) => {
         image.src = nextLang === "ja" ? image.dataset.jaSrc : image.dataset.enSrc;
       });
+
+      timerLocalizedImages.forEach((image) => {
+        image.alt = nextLang === "ja" ? image.dataset.jaAlt : image.dataset.enAlt;
+      });
+
+      timerLocalizedLabels.forEach((element) => {
+        element.setAttribute("aria-label", nextLang === "ja" ? element.dataset.jaLabel : element.dataset.enLabel);
+      });
+    };
+
+    const savedTimerLang = getSavedTimerLang();
+    if (savedTimerLang === "en") {
+      applyTimerLang(savedTimerLang);
+    }
+
+    timerToggle.addEventListener("click", () => {
+      const nextLang = timerBody.dataset.lang === "ja" ? "en" : "ja";
+      applyTimerLang(nextLang);
+      setSavedTimerLang(nextLang);
     });
   </script>
 </body>

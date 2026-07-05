@@ -2401,7 +2401,7 @@ svg {
   gap: 10px;
 }
 
-.timer-premium-grid span {
+.timer-premium-grid > span {
   min-height: 58px;
   padding: 15px;
   border: 1px solid rgba(248, 180, 0, 0.28);
